@@ -2,7 +2,7 @@ var buttonColours = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
 
-$(".btn").click(function() {
+$(".btnn").click(function() {
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
 
@@ -30,7 +30,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
       $("body").removeClass("game-over");
     }, 200);
-    
+
     $("h1").text("Game Over, Press Any Key to Restart");
 
     startOver();
@@ -83,4 +83,12 @@ function animatePress(currentColour) {
   currentBtn.removeClass("pressed");
   }, 100);
 }
+
+
+var howToPlay = $("#how-to-play");
+var text = $(".instruction");
+
+howToPlay.click(function() {
+  text.slideToggle("hidden");
+})
 

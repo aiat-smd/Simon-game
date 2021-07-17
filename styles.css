@@ -14,10 +14,37 @@ body {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
-.btn {
+.row {
+  display: block;
+}
+
+.instruction {
+  position: absolute;
+  left: 100px;
+  top: 260px;
+  text-align: left;
+  color: #FEF2BF;
+  width: 300px;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.how-to-play {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+
+.text {
+  
+}
+
+.btnn {
   margin: 25px;
   display: inline-block;
   height: 200px;
