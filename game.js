@@ -8,8 +8,8 @@ $(".btnn").click(function() {
 
   playSound(userChosenColour);
   animatePress(userChosenColour);
-
   checkAnswer(userClickedPattern.length - 1);
+
 })
 
 
@@ -31,7 +31,7 @@ function checkAnswer(currentLevel) {
       $("body").removeClass("game-over");
     }, 200);
 
-    $("h1").text("Game Over, Press Any Key to Restart");
+    $("h1").text("Игра окончена, нажмите на кнопку Старт, чтобы начать");
 
     startOver();
   }
@@ -54,11 +54,20 @@ $(document).keydown(function() {
   }
 })
 
+$("#start").click(function() {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+})
+
+
 function nextSequence() {
   userClickedPattern = [];
 
   level++;
-  $("#level-title").text("Level " + level);
+  $("#level-title").text("уровень " + level);
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);

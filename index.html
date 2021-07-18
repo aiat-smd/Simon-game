@@ -4,25 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Simon</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <button type="button" id="how-to-play" class="how-to-play btn btn-outline-light">How to play</button>
-  <div class="instruction hidden">
-    <p class="text">1. Нажмите любую кнопку на клавиатуре.</p> 
-    <p>2. Саймон подаст первый сигнал. Повторите сигнал, нажав на линзу того же цвета.</p> 
-    <p>3. Саймон продублирует первый сигнал и добавит еще один. Повторите эти два сигнала, нажимая по порядку линзы того же цвета.</p>
-    <p>4. Саймон продублирует эти первые два сигнала и добавит еще один.
-      Продолжайте играть до тех пор, пока вы можете правильно повторять каждую последовательность сигналов.
-    </p>
-  </div>
+  <h1 id="level-title">Нажмите на кнопку Старт, чтобы начать</h1>
+  <a id="start" class="start btn btn-outline-light">Старт</a>
 
   <div class="container">
-    <div lass="row">
+    <div class="row">
 
       <div type="button" id="green" class="btnn green">
 
@@ -42,6 +35,16 @@
 
       </div>
 
+    </div>
+
+    <a id="how-to-play" class="how-to-play btn btn-outline-light btn-sm">Как играть ?</a>
+    <div class="instruction hidden">
+      <p>1. Нажмите кнопку старт.</p> 
+      <p>2. Саймон подаст первый сигнал. Повторите сигнал, нажав на линзу того же цвета.</p> 
+      <p>3. Саймон продублирует первый сигнал и добавит еще один. Повторите эти два сигнала, нажимая по порядку линзы того же цвета.</p>
+      <p>4. Саймон продублирует эти первые два сигнала и добавит еще один.
+        Продолжайте играть до тех пор, пока вы можете правильно повторять каждую последовательность сигналов.
+      </p>
     </div>
 
   </div>

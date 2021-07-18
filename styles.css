@@ -6,13 +6,13 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 2% 5%;
   color: #FEF2BF;
 }
 
 .container {
   display: block;
-  width: 50%;
+  /* width: 50%; */
   margin: auto;
 }
 
@@ -23,7 +23,7 @@ body {
 .instruction {
   position: absolute;
   left: 100px;
-  top: 260px;
+  top: 300px;
   text-align: left;
   color: #FEF2BF;
   width: 300px;
@@ -37,20 +37,49 @@ body {
 .how-to-play {
   position: absolute;
   left: 100px;
-  top: 200px;
-}
-
-.text {
-  
+  top: 230px;
 }
 
 .btnn {
-  margin: 25px;
+  margin: 20px;
   display: inline-block;
   height: 200px;
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.start {
+  width: 200px;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 1000px) {
+  .instruction {
+    position: static;
+    margin: auto;
+    
+  }
+  
+  .how-to-play {
+    position: static;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+
+  #level-title {
+    font-size: 1.3rem;
+    margin-top: 40px;
+    content: "Нажмите на кнопку Старт, чтобы начать";
+  }
+
+  .btnn {
+    margin: 10px;
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    border: 5px solid black;
+    border-radius: 20%;
+  }
 }
 
 .game-over {
