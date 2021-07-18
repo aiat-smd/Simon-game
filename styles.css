@@ -29,17 +29,14 @@ body {
   width: 300px;
   font-size: 0.8rem;
 }
-
 .hidden {
   display: none;
 }
-
 .how-to-play {
   position: absolute;
   left: 100px;
   top: 230px;
 }
-
 .btnn {
   margin: 20px;
   display: inline-block;
@@ -48,7 +45,6 @@ body {
   border: 10px solid black;
   border-radius: 20%;
 }
-
 .start {
   width: 200px;
 }
@@ -59,19 +55,16 @@ body {
     margin: auto;
     
   }
-  
   .how-to-play {
     position: static;
     margin: auto;
     font-size: 0.8rem;
   }
-
   #level-title {
     font-size: 1.3rem;
     margin-top: 40px;
     content: "Нажмите на кнопку Старт, чтобы начать";
   }
-
   .btnn {
     margin: 10px;
     display: inline-block;
@@ -81,28 +74,22 @@ body {
     border-radius: 20%;
   }
 }
-
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
-
 .red {
   background-color: red;
 }
-
 .green {
   background-color: green;
 }
-
 .blue {
   background-color: blue;
 }
-
 .yellow {
   background-color: yellow;
 }
-
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
